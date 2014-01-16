@@ -92,6 +92,7 @@ alias websites='cd ~/Dropbox/Sites/git/repo/websites/'
 
 # Applications
 alias coda='open -a /Applications/Coda\ 2.app/'
+alias markdown='open -a /Applications/Markdown\ Pro.app/'
 
 # Git shortcuts
 alias ga='git add'
