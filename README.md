@@ -1,4 +1,4 @@
 dotfiles
 ========
 
-config files for zsh, janus, vim, tmux
+config files for zsh, vim, tmux
