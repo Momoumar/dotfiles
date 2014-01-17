@@ -1,0 +1,127 @@
+# Make sure we’re using the latest Homebrew
+update
+
+# Upgrade any already-installed formulae
+upgrade
+
+# Version Control
+## install git
+
+
+
+# Tap repositories and their packages
+## tap homebrew/versions
+## tap 'homebrew/binary'
+## tap 'rcmdnk/brewall'
+## brew 'brewall'
+
+
+
+# ###################################################################################################################################################
+# CASK PACKAGES
+# ###################################################################################################################################################
+
+# brew-cask provides a friendly homebrew-style CLI workflow for the administration of Mac applications distributed as binaries.
+tap phinze/cask
+brew 'brew-cask'
+
+# Mac OS X Client
+## cask 'onepassword'
+## cask 'airfoil'
+## cask 'alfred'
+## cask 'appfresh'
+## cask 'arduino' # adjust the Sketchbook path to `~/Dropbox/Apps/Arduino`
+## cask 'bartender'
+## cask 'beamer'
+## cask 'bittorrent-sync'
+## cask 'calibre'
+## cask 'cleanmymac'
+## cask 'cocktail'
+## cask 'comic-book-lover-sync'
+## cask 'comic-book-lover'
+## cask 'delicious-library'
+## cask 'dropbox'
+## cask 'flip4mac'
+## cask 'google-chrome'
+## cask 'google-hangouts'
+## cask 'google-music-manager'
+## cask 'gpg-tools'
+## cask 'hazel'
+## cask 'iterm2'
+## cask 'jewelrybox'
+## cask 'mendeley'
+## cask 'minecraft'
+## cask 'miro-video-converter'
+## cask 'mumble'
+## cask 'omnigraffle'
+## cask 'openemu'
+## cask 'parallels'
+## cask 'plex-home-theater'
+## cask 'processing' # adjust the Sketchbook path to `~/Dropbox/Apps/Processing`
+## cask 'querious'
+## cask 'reflector'
+## cask 'renamer'
+## cask 'satellite-eyes'
+## cask 'screenflow'
+## cask 'simple-comic'
+## cask 'skype'
+## cask 'spotify'
+## cask 'superduper'
+## cask 'tilemill'
+## cask 'tunnelblick'
+## cask 'vagrant'
+## cask 'virtualbox'
+## cask 'vlc'
+## cask 'vmware-fusion'
+
+# Mac OS X Server
+cask 'onepassword'
+cask 'airfoil'
+cask 'appfresh'
+cask 'backblaze-downloader'
+cask 'bartender'
+cask 'bitcoin-qt'
+cask 'cleanmymac'
+cask 'comic-book-lover-sync'
+cask 'comic-book-lover'
+cask 'google-music-manager'
+cask 'drobo-dashboard'
+cask 'dropbox'
+cask 'hazel'
+cask 'iterm2'
+cask 'jewelrybox'
+cask 'macpardeluxe'
+cask 'plex-media-server'
+cask 'sabnzbd'
+cask 'subsmarine'
+
+# Client - Homebrew packages
+## brew 'ack'
+## brew 'ctags'
+## brew 'htop'
+## brew 'hub'
+## brew 'git' # Mavericks does deliver a further old git version, compare `brew info git` with `git --version`
+## brew 'multitail'
+## brew 'ngrep'
+## brew 'tmux'
+## brew 'tree'
+## brew 'wget'
+## brew 'youtube-dl'
+
+# Server - Homebrew packages
+## brew 'ack'
+## brew 'ctags'
+## brew 'htop'
+## brew 'hub'
+## brew 'git' # Mavericks does deliver a further old git version, compare `brew info git` with `git --version`
+## brew 'multitail'
+## brew 'ngrep'
+## brew 'tmux'
+## brew 'tree'
+## brew 'wget'
+## brew 'youtube-dl'
+
+
+
+# Remove outdated versions from the cellar
+cleanup
