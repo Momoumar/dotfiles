@@ -94,6 +94,10 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
+# rebuild Launch Services to remove duplicate entries on Open With menu
+alias rebuildopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
+alias defhist='history 1 | grep "defaults"'
+
 # Directories
 alias d="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
@@ -135,3 +139,23 @@ alias mtmc='multitail minecraft -i ~/Dropbox/Apps/MinecraftServerVanilla/server/
 # alias mtcb='multitail <multicolorscheme name> -i </path/to/log>'
 ## Murmur
 # alias mtmu=''
+
+# Nerd stuff
+# Source: http://aur.archlinux.org/packages/lolbash/lolbash/lolbash.sh
+alias wtf='dmesg'
+alias onoz='cat /var/log/errors.log'
+alias rtfm='man'
+alias visible='echo'
+alias invisible='cat'
+alias moar='more'
+alias icanhas='mkdir'
+alias donotwant='rm'
+alias dowant='cp'
+alias gtfo='mv'
+alias hai='cd'
+alias plz='pwd'
+alias inur='locate'
+alias nomz='ps aux | less'
+alias nomnom='killall'
+alias cya='reboot'
+alias kthxbai='halt'

@@ -90,7 +90,7 @@ install 'brew-cask'
 
 cask install 'onepassword'
 cask install 'airfoil'
-cask install 'appfresh'
+cask install 'appfresh' # possibly obsolete buy using 'brew cask'
 cask install 'backblaze-downloader'
 cask install 'bartender'
 cask install 'bitcoin-qt'
