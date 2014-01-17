@@ -98,7 +98,7 @@ cask install 'cleanmymac'
 cask install 'comic-book-lover-sync'
 cask install 'comic-book-lover'
 cask install 'google-music-manager'
-cask install 'drobo-dashboard'
+## cask install 'drobo-dashboard' # java has to be installed first
 cask install 'dropbox'
 cask install 'hazel'
 cask install 'iterm2'
@@ -106,7 +106,7 @@ cask install 'jewelrybox'
 cask install 'macpardeluxe'
 cask install 'plex-media-server'
 cask install 'sabnzbd'
-## cask install 'subsmarine' # is buggy
+## cask install 'subsmarine' # error, when installing. please check the cask.
 
 
 
@@ -158,7 +158,7 @@ install 'wget'
 install 'youtube-dl'
 
 # Install more recent versions of some OS X tools
-install 'vim --override-system-vi'
+install 'vim' # --override-system-vi
 
 # ###################################################################################################################################################
 # CLEANUP
