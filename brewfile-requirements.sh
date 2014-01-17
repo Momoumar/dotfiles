@@ -42,7 +42,7 @@ fi
 # Brewdler installation
 if ! which brewdle >/dev/null 2>&1; then
   echo "[Install] Dependency Brewdle"
-  gem install brewdler --no-ri --no-rdoc
+  sudo gem install brewdler --no-ri --no-rdoc
   command_ver=$(brewdle --version)
   command=$(which brewdle)
   echo "[Install] installed Brewdle. path : ${comand} version : ${command_ver}"
