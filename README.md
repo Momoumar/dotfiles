@@ -2,6 +2,7 @@
 My personal dotfiles for Mac OS X (Mavericks).
 
 ## Repository Files
+* gitignore - rules for git when I commit
 * tmux.conf - configuration file for tmux
 * vimrc.after - config file for Janus in combination with vim
 * vimrc.before - config file for Janus in combination with vim
