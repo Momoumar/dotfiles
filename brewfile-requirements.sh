@@ -1,5 +1,16 @@
 #!/usr/bin/env bash
-# originally from Ryusuke Kimura - https://github.com/ryurock/brewfile/blob/
+
+
+
+
+
+# inspired by Ryusuke Kimura - https://github.com/ryurock/brewfile/blob/
+
+# TO DO
+## TERMINAL/COMMAND LINE INSTALL
+### 'gcc --version'
+## JAVA INSTALL
+### run command 'java --version'
 
 set -e
 
@@ -40,14 +51,7 @@ if ! which gem >/dev/null 2>&1; then
 fi
 
 # Brewdler installation
-if ! which brewdle >/dev/null 2>&1; then
-  echo "[Install] Dependency Brewdle"
-  sudo gem install brewdler --no-ri --no-rdoc
-  command_ver=$(brewdle --version)
-  command=$(which brewdle)
-  echo "[Install] installed Brewdle. path : ${comand} version : ${command_ver}"
-else
-  echo "[Install] Already exists dependency Brewdle"
-fi
+echo "[Install] Brewfile"
+brew bundle brewfile
 
-echo "Dependency Syntax OK"
+echo "Everything is installed."

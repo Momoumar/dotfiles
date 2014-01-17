@@ -1,19 +1,22 @@
-# Make sure we’re using the latest Homebrew
+# ###################################################################################################################################################
+# PREPARATION
+# ###################################################################################################################################################
+
+# Make sure that the latest Homebrew version in use
 update
 
 # Upgrade any already-installed formulae
 upgrade
 
-# Version Control
-## install git
+# ###################################################################################################################################################
+# TAP REPOSITORIES
+# ###################################################################################################################################################
 
-
-
-# Tap repositories and their packages
-## tap homebrew/versions
-## tap 'homebrew/binary'
-## tap 'rcmdnk/brewall'
-## brew 'brewall'
+# tap homebrew/versions
+# tap 'homebrew/binary'
+# tap 'rcmdnk/brewall'
+# brew 'brewall'
+# tap 'homebrew/binary'
 
 
 
@@ -22,106 +25,144 @@ upgrade
 # ###################################################################################################################################################
 
 # brew-cask provides a friendly homebrew-style CLI workflow for the administration of Mac applications distributed as binaries.
-tap phinze/cask
-brew 'brew-cask'
-
-# Mac OS X Client
-## cask 'onepassword'
-## cask 'airfoil'
-## cask 'alfred'
-## cask 'appfresh'
-## cask 'arduino' # adjust the Sketchbook path to `~/Dropbox/Apps/Arduino`
-## cask 'bartender'
-## cask 'beamer'
-## cask 'bittorrent-sync'
-## cask 'calibre'
-## cask 'cleanmymac'
-## cask 'cocktail'
-## cask 'comic-book-lover-sync'
-## cask 'comic-book-lover'
-## cask 'delicious-library'
-## cask 'dropbox'
-## cask 'flip4mac'
-## cask 'google-chrome'
-## cask 'google-hangouts'
-## cask 'google-music-manager'
-## cask 'gpg-tools'
-## cask 'hazel'
-## cask 'iterm2'
-## cask 'jewelrybox'
-## cask 'mendeley'
-## cask 'minecraft'
-## cask 'miro-video-converter'
-## cask 'mumble'
-## cask 'omnigraffle'
-## cask 'openemu'
-## cask 'parallels'
-## cask 'plex-home-theater'
-## cask 'processing' # adjust the Sketchbook path to `~/Dropbox/Apps/Processing`
-## cask 'querious'
-## cask 'reflector'
-## cask 'renamer'
-## cask 'satellite-eyes'
-## cask 'screenflow'
-## cask 'simple-comic'
-## cask 'skype'
-## cask 'spotify'
-## cask 'superduper'
-## cask 'tilemill'
-## cask 'tunnelblick'
-## cask 'vagrant'
-## cask 'virtualbox'
-## cask 'vlc'
-## cask 'vmware-fusion'
-
-# Mac OS X Server
-cask 'onepassword'
-cask 'airfoil'
-cask 'appfresh'
-cask 'backblaze-downloader'
-cask 'bartender'
-cask 'bitcoin-qt'
-cask 'cleanmymac'
-cask 'comic-book-lover-sync'
-cask 'comic-book-lover'
-cask 'google-music-manager'
-cask 'drobo-dashboard'
-cask 'dropbox'
-cask 'hazel'
-cask 'iterm2'
-cask 'jewelrybox'
-cask 'macpardeluxe'
-cask 'plex-media-server'
-cask 'sabnzbd'
-cask 'subsmarine'
-
-# Client - Homebrew packages
-## brew 'ack'
-## brew 'ctags'
-## brew 'htop'
-## brew 'hub'
-## brew 'git' # Mavericks does deliver a further old git version, compare `brew info git` with `git --version`
-## brew 'multitail'
-## brew 'ngrep'
-## brew 'tmux'
-## brew 'tree'
-## brew 'wget'
-## brew 'youtube-dl'
-
-# Server - Homebrew packages
-## brew 'ack'
-## brew 'ctags'
-## brew 'htop'
-## brew 'hub'
-## brew 'git' # Mavericks does deliver a further old git version, compare `brew info git` with `git --version`
-## brew 'multitail'
-## brew 'ngrep'
-## brew 'tmux'
-## brew 'tree'
-## brew 'wget'
-## brew 'youtube-dl'
+tap 'phinze/cask'
+install 'brew-cask'
 
 
+
+# ###################################################################################################################################################
+# CASK CLIENT PACKAGES
+# ###################################################################################################################################################
+
+# cask install 'onepassword'
+# cask install 'airfoil'
+# cask install 'alfred'
+# cask install 'appfresh'
+# cask install 'arduino' # adjust the Sketchbook path to `~/Dropbox/Apps/Arduino`
+# cask install 'bartender'
+# cask install 'beamer'
+# cask install 'bittorrent-sync'
+# cask install 'calibre'
+# cask install 'cleanmymac'
+# cask install 'cocktail'
+# cask install 'comic-book-lover-sync'
+# cask install 'comic-book-lover'
+# cask install 'delicious-library'
+# cask install 'dropbox'
+# cask install 'flip4mac'
+# cask install 'google-chrome'
+# cask install 'google-hangouts'
+# cask install 'google-music-manager'
+# cask install 'gpg-tools'
+# cask install 'hazel'
+# cask install 'iterm2'
+# cask install 'jewelrybox'
+# cask install 'mendeley'
+# cask install 'minecraft'
+# cask install 'miro-video-converter'
+# cask install 'mumble'
+# cask install 'omnigraffle'
+# cask install 'openemu'
+# cask install 'parallels'
+# cask install 'plex-home-theater'
+# cask install 'processing' # adjust the Sketchbook path to `~/Dropbox/Apps/Processing`
+# cask install 'querious'
+# cask install 'reflector'
+# cask install 'renamer'
+# cask install 'satellite-eyes'
+# cask install 'screenflow'
+# cask install 'simple-comic'
+# cask install 'skype'
+# cask install 'spotify'
+# cask install 'superduper'
+# cask install 'tilemill'
+# cask install 'tunnelblick'
+# cask install 'vagrant'
+# cask install 'virtualbox'
+# cask install 'vlc'
+# cask install 'vmware-fusion'
+
+
+
+# ###################################################################################################################################################
+# CASK SERVER PACKAGES
+# ###################################################################################################################################################
+
+cask install 'onepassword'
+cask install 'airfoil'
+cask install 'appfresh'
+cask install 'backblaze-downloader'
+cask install 'bartender'
+cask install 'bitcoin-qt'
+cask install 'cleanmymac'
+cask install 'comic-book-lover-sync'
+cask install 'comic-book-lover'
+cask install 'google-music-manager'
+cask install 'drobo-dashboard'
+cask install 'dropbox'
+cask install 'hazel'
+cask install 'iterm2'
+cask install 'jewelrybox'
+cask install 'macpardeluxe'
+cask install 'plex-media-server'
+cask install 'sabnzbd'
+## cask install 'subsmarine' # is buggy
+
+
+
+# ###################################################################################################################################################
+# CLIENT BINARIES
+# ###################################################################################################################################################
+
+# Version Control
+## install git
+## install git-flow # Mavericks does deliver a further old git version, compare `brew info git` with `git --version`
+## install mercurial
+
+# Install other useful binaries
+## install 'ack'
+## install 'ctags'
+## install 'htop'
+## install 'hub'
+## install 'git' # Mavericks does deliver a further old git version, compare `brew info git` with `git --version`
+## install 'multitail'
+## install 'ngrep'
+## install 'ssh-copy-id'
+## install 'tmux'
+## install 'tree'
+## install 'wget'
+## install 'youtube-dl'
+
+
+
+# ###################################################################################################################################################
+# SERVER BINARIES
+# ###################################################################################################################################################
+
+# Version Control
+install 'git'
+install 'git-flow' # Mavericks does deliver a further old git version, compare `brew info git` with `git --version`
+install 'mercurial'
+
+# Install other useful binaries
+install 'ack'
+install 'ctags'
+install 'htop'
+install 'hub'
+install 'multitail'
+install 'ngrep'
+install 'ssh-copy-id'
+install 'tmux'
+install 'tree'
+install 'wget'
+install 'youtube-dl'
+
+# Install more recent versions of some OS X tools
+install 'vim --override-system-vi'
+
+# ###################################################################################################################################################
+# CLEANUP
+# ###################################################################################################################################################
 
 # Remove outdated versions from the cellar
 cleanup
