@@ -19,7 +19,7 @@ fi
 # Homebrew installation
 if ! which brew >/dev/null 2>&1; then
   echo "[Install] Dependency Homebrew"
-  ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+  ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
   command_ver=$(brew --version)
   command=$(which brew)
   echo "[Install] installed Homebrew. path : ${comand} version : ${command_ver}"
