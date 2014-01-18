@@ -34,53 +34,53 @@ install 'brew-cask'
 # CASK CLIENT PACKAGES
 # ###################################################################################################################################################
 
-# cask install 'onepassword'
-# cask install 'airfoil'
-# cask install 'alfred'
-# cask install 'appfresh'
-# cask install 'arduino' # adjust the Sketchbook path to `~/Dropbox/Apps/Arduino`
-# cask install 'bartender'
-# cask install 'beamer'
-# cask install 'bittorrent-sync'
-# cask install 'calibre'
-# cask install 'cleanmymac'
-# cask install 'cocktail'
-# cask install 'comic-book-lover-sync'
-# cask install 'comic-book-lover'
-# cask install 'delicious-library'
-# cask install 'dropbox'
-# cask install 'flip4mac'
-# cask install 'google-chrome'
-# cask install 'google-hangouts'
-# cask install 'google-music-manager'
-# cask install 'gpg-tools'
-# cask install 'hazel'
-# cask install 'iterm2'
-# cask install 'jewelrybox'
-# cask install 'mendeley'
-# cask install 'minecraft'
-# cask install 'miro-video-converter'
-# cask install 'mumble'
-# cask install 'omnigraffle'
-# cask install 'openemu'
-# cask install 'parallels'
-# cask install 'plex-home-theater'
-# cask install 'processing' # adjust the Sketchbook path to `~/Dropbox/Apps/Processing`
-# cask install 'querious'
-# cask install 'reflector'
-# cask install 'renamer'
-# cask install 'satellite-eyes'
-# cask install 'screenflow'
-# cask install 'simple-comic'
-# cask install 'skype'
-# cask install 'spotify'
-# cask install 'superduper'
-# cask install 'tilemill'
-# cask install 'tunnelblick'
-# cask install 'vagrant'
-# cask install 'virtualbox'
-# cask install 'vlc'
-# cask install 'vmware-fusion'
+cask install 'onepassword'
+cask install 'airfoil'
+cask install 'alfred'
+cask install 'appfresh'
+cask install 'arduino' # adjust the Sketchbook path to `~/Dropbox/Apps/Arduino`
+cask install 'bartender'
+cask install 'beamer'
+cask install 'bittorrent-sync'
+cask install 'calibre'
+cask install 'cleanmymac'
+cask install 'cocktail'
+cask install 'comic-book-lover-sync'
+cask install 'comic-book-lover'
+cask install 'delicious-library'
+cask install 'dropbox'
+cask install 'flip4mac'
+cask install 'google-chrome'
+cask install 'google-hangouts'
+cask install 'google-music-manager'
+cask install 'gpg-tools'
+cask install 'hazel'
+cask install 'iterm2'
+cask install 'jewelrybox'
+cask install 'mendeley'
+cask install 'minecraft'
+cask install 'miro-video-converter'
+cask install 'mumble'
+cask install 'omnigraffle'
+cask install 'openemu'
+cask install 'parallels'
+cask install 'plex-home-theater'
+cask install 'processing' # adjust the Sketchbook path to `~/Dropbox/Apps/Processing`
+cask install 'querious'
+cask install 'reflector'
+cask install 'renamer'
+cask install 'satellite-eyes'
+cask install 'screenflow'
+cask install 'simple-comic'
+cask install 'skype'
+cask install 'spotify'
+cask install 'superduper'
+cask install 'tilemill'
+cask install 'tunnelblick'
+cask install 'vagrant'
+cask install 'virtualbox'
+cask install 'vlc'
+cask install 'vmware-fusion'
 
 
 
@@ -88,24 +88,24 @@ install 'brew-cask'
 # CASK SERVER PACKAGES
 # ###################################################################################################################################################
 
-cask install 'onepassword'
-cask install 'airfoil'
-cask install 'appfresh' # possibly obsolete buy using 'brew cask'
-cask install 'backblaze-downloader'
-cask install 'bartender'
-cask install 'bitcoin-qt'
-cask install 'cleanmymac'
-cask install 'comic-book-lover-sync'
-cask install 'comic-book-lover'
-cask install 'google-music-manager'
+# cask install 'onepassword'
+# cask install 'airfoil'
+# cask install 'appfresh' # possibly obsolete buy using 'brew cask'
+# cask install 'backblaze-downloader'
+# cask install 'bartender'
+# cask install 'bitcoin-qt'
+# cask install 'cleanmymac'
+# cask install 'comic-book-lover-sync'
+# cask install 'comic-book-lover'
+# cask install 'google-music-manager'
 ## cask install 'drobo-dashboard' # java has to be installed first
-cask install 'dropbox'
-cask install 'hazel'
-cask install 'iterm2'
-cask install 'jewelrybox'
-cask install 'macpardeluxe'
-cask install 'plex-media-server'
-cask install 'sabnzbd'
+# cask install 'dropbox'
+# cask install 'hazel'
+# cask install 'iterm2'
+# cask install 'jewelrybox'
+# cask install 'macpardeluxe'
+# cask install 'plex-media-server'
+# cask install 'sabnzbd'
 ## cask install 'subsmarine' # error, when installing. please check the cask.
 
 
@@ -115,40 +115,16 @@ cask install 'sabnzbd'
 # ###################################################################################################################################################
 
 # Version Control
-## install git
-## install git-flow # Mavericks does deliver a further old git version, compare `brew info git` with `git --version`
-## install mercurial
-
-# Install other useful binaries
-## install 'ack'
-## install 'ctags'
-## install 'htop'
-## install 'hub'
-## install 'git' # Mavericks does deliver a further old git version, compare `brew info git` with `git --version`
-## install 'multitail'
-## install 'ngrep'
-## install 'ssh-copy-id'
-## install 'tmux'
-## install 'tree'
-## install 'wget'
-## install 'youtube-dl'
-
-
-
-# ###################################################################################################################################################
-# SERVER BINARIES
-# ###################################################################################################################################################
-
-# Version Control
-install 'git'
-install 'git-flow' # Mavericks does deliver a further old git version, compare `brew info git` with `git --version`
-install 'mercurial'
+install git
+install git-flow # Mavericks does deliver a further old git version, compare `brew info git` with `git --version`
+install mercurial
 
 # Install other useful binaries
 install 'ack'
 install 'ctags'
 install 'htop'
 install 'hub'
+install 'git' # Mavericks does deliver a further old git version, compare `brew info git` with `git --version`
 install 'multitail'
 install 'ngrep'
 install 'ssh-copy-id'
@@ -160,8 +136,34 @@ install 'youtube-dl'
 # Install more recent versions of some OS X tools
 install 'vim' # --override-system-vi
 
+
 # ###################################################################################################################################################
-# CLEANUP & doctor
+# SERVER BINARIES
+# ###################################################################################################################################################
+
+# Version Control
+## install 'git'
+## install 'git-flow' # Mavericks does deliver a further old git version, compare `brew info git` with `git --version`
+## install 'mercurial'
+
+# Install other useful binaries
+## install 'ack'
+## install 'ctags'
+## install 'htop'
+## install 'hub'
+## install 'multitail'
+## install 'ngrep'
+## install 'ssh-copy-id'
+## install 'tmux'
+## install 'tree'
+## install 'wget'
+## install 'youtube-dl'
+
+# Install more recent versions of some OS X tools
+## install 'vim' # --override-system-vi
+
+# ###################################################################################################################################################
+# CLEANUP & DOCTOR
 # ###################################################################################################################################################
 
 # Remove outdated versions from the cellar
