@@ -8,7 +8,7 @@
 
 # TO DO
 ## TERMINAL/COMMAND LINE INSTALL
-### 'gcc --version'
+### run command 'xcode-select --install'
 ## JAVA INSTALL
 ### run command 'java --version'
 

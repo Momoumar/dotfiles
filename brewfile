@@ -12,11 +12,29 @@ upgrade
 # TAP REPOSITORIES
 # ###################################################################################################################################################
 
-# tap homebrew/versions
-# tap 'homebrew/binary'
-# tap 'rcmdnk/brewall'
-# brew 'brewall'
-# tap 'homebrew/binary'
+# Main taps
+## tap 'homebrew/apache' 		# A tap for Apache modules, extending OS X's built-in Apache. These brews may require unconventional additional setup, as explained in the caveats.
+## tap 'homebrew/binary' 		# These formulae provide binary installs of software that, for whatever reason, aren't available as source builds in the primary repository.
+## tap 'homebrew/boneyard' 		# Formula are not deleted, they are moved here.
+## tap 'homebrew/completions' 	# e.g. Rails, Django, Vagrant completion
+## tap 'homebrew/dupes' 		# Need GDB or a newer Tk? System duplicates go here.
+## tap 'homebrew/games' 		# e.g. Frotz, netzhack etc.
+## tap 'homebrew/headonly' 		# A tap for brews that don't have stable versions.
+## tap 'homebrew/science' 		# A collection of scientific libraries and tools.
+## tap 'homebrew/versions' 		# Need e.g. older or newer versions of Python? Newer versions of GCC?
+## tap 'marcqualie/nginx' 		# Feature rich Nginx tap for modules.
+## tap 'josegonzalez/php' 		# Repository for php-related formulae.
+## tap 'samueljohn/python' 		# A few Python formulae that do not build well with pip alone.
+
+# Other interesting taps
+## tap 'larsimmisch/avr' 		# GNU AVR toolchain (avr-gcc etc. for Arduino hackers).
+## tap 'nolith/embedded' 		# Flashing tools for embedded devices and olsrd for mesh network routing.
+## tap 'anarchivist/forensics' 	# Digital forensics-related formulae; mostly head-only, binary-only, or unstable.
+## tap 'titanous/gnuradio' 		# GNU Radio and friends running on OS X.
+## tap 'besport/ocaml' 			# A tap for Ocaml libraries, though with caveats, it requires you install its customized ocaml formula. Perhaps a template for more work.
+## tap 'petere/postgresql' 		# Allows installing multiple PostgreSQL versions in parallel.
+## tap 'iMichka/MacVTKITKPythonBottles' # VTK and ITK binaries with Python wrapping.
+## tap 'rcmdnk/brewall' 		# Manager for packages of Homebrew, inspired by Brewdler.
 
 
 
@@ -53,7 +71,7 @@ cask install 'flip4mac'
 cask install 'google-chrome'
 cask install 'google-hangouts'
 cask install 'google-music-manager'
-cask install 'gpg-tools'
+cask install 'gpgtools'
 cask install 'hazel'
 cask install 'iterm2'
 cask install 'jewelrybox'
@@ -136,6 +154,11 @@ install 'youtube-dl'
 # Install more recent versions of some OS X tools
 install 'vim' # --override-system-vi
 
+# Nerd stuff
+install 'python3' # ponysay needs python3
+install 'ponysay'
+
+
 
 # ###################################################################################################################################################
 # SERVER BINARIES
@@ -163,11 +186,8 @@ install 'vim' # --override-system-vi
 ## install 'vim' # --override-system-vi
 
 # ###################################################################################################################################################
-# CLEANUP & DOCTOR
+# CLEANUP
 # ###################################################################################################################################################
 
 # Remove outdated versions from the cellar
 cleanup
-
-# Diagnoses common issues
-doctor
