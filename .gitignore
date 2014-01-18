@@ -1,4 +1,4 @@
-# Compiled source #
+# Compiled source
 *.com
 *.class
 *.dll
@@ -6,7 +6,7 @@
 *.o
 *.so
 
-# OS generated files #
+# OS generated files
 .DS_Store
 .DS_Store?
 ._*
@@ -15,10 +15,11 @@
 .ethumbs.db
 .Thumbs.db
 
-# Logs and databases #
+# Logs and databases
 *.log
 *.sql
 *.sqlite
 
-# Project specific #
-
+# Project specific
+## check out https://github.com/github/gitignore for useful boilerplates
+## install https://github.com/simonwhitaker/gibo to manage them

@@ -3,7 +3,7 @@
 
 
 
-
+# execute straight from Github (though the brewfile will not be found) 'curl https://raw.github.com/guttertec/dotfiles/master/bootstraph.sh | sh -'
 # inspired by Ryusuke Kimura - https://github.com/ryurock/brewfile/blob/
 
 # TO DO
@@ -19,7 +19,7 @@ if [ ! `uname` = "Darwin" ]; then
   exit
 fi
 
-# check Xcode
+# check if XCode is installed
 if ! which xcodebuild >/dev/null 2>&1; then
   echo "[Error] Dependency Error. not installed XCode and XCode CommandLine Tools"
   exit
@@ -27,7 +27,7 @@ else
     echo "[Install] Already exists dependency XCode and XCode CommandLine Tools"
 fi
 
-# Homebrew installation
+# Install Homebrew
 if ! which brew >/dev/null 2>&1; then
   echo "[Install] Dependency Homebrew"
   ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
@@ -35,23 +35,23 @@ if ! which brew >/dev/null 2>&1; then
   command=$(which brew)
   echo "[Install] installed Homebrew. path : ${comand} version : ${command_ver}"
 else
-    echo "[Install] Already exists dependency Homebrew"
+    echo "[Error] Homebrew is already installed."
 fi
 
-# check Ruby is installed
+# check if Ruby is installed
 if ! which ruby >/dev/null 2>&1; then
   echo "[Error] Dependency Error. not installed Ruby"
   exit
 fi
 
-# check Rubygems is installed
+# check if Rubygems is installed
 if ! which gem >/dev/null 2>&1; then
   echo "[Error] Dependency Error. not installed Ruby Gem"
   exit
 fi
 
-# Brewdler installation
+# Use brew and brew-cask to install everything by using a Brewfile
 echo "[Install] Brewfile"
 brew bundle brewfile
 
-echo "Everything is installed."
+echo "Everything is installed. Have a nice day."
