@@ -3,7 +3,8 @@
 
 # Specify your defaults in this environment variable
 ## caskroom usually /opt/homebrew-cask/Caskroom
-export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/etc/Caskroom"
+# Link Homebrew casks in `/Applications` rather than `~/Applications`
+export HOMEBREW_CASK_OPTS="--appdir=/Applications
 
-# export EDITOR="emacsclient -t"
+# export EDITOR="vim"
 # export ALTERNATE_EDITOR=""
