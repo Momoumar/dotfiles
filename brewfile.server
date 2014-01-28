@@ -1,0 +1,123 @@
+# ###################################################################################################################################################
+# PREPARATION
+# ###################################################################################################################################################
+
+# Make sure that the latest Homebrew version in use
+update
+
+# Upgrade any already-installed formulae
+upgrade
+
+
+
+# ###################################################################################################################################################
+# TAP REPOSITORIES
+# ###################################################################################################################################################
+
+# Main taps
+## tap 'homebrew/apache'        # A tap for Apache modules, extending OS X's built-in Apache. These brews may require unconventional additional setup, as explained in the caveats.
+## tap 'homebrew/binary'        # These formulae provide binary installs of software that, for whatever reason, aren't available as source builds in the primary repository.
+## tap 'homebrew/boneyard'      # Formula are not deleted, they are moved here.
+## tap 'homebrew/completions'   # e.g. Rails, Django, Vagrant completion
+## tap 'homebrew/dupes'         # Need GDB or a newer Tk? System duplicates go here.
+## tap 'homebrew/games'         # e.g. Frotz, netzhack etc.
+## tap 'homebrew/headonly'      # A tap for brews that don't have stable versions.
+## tap 'homebrew/science'       # A collection of scientific libraries and tools.
+## tap 'homebrew/versions'      # Need e.g. older or newer versions of Python? Newer versions of GCC?
+## tap 'marcqualie/nginx'       # Feature rich Nginx tap for modules.
+## tap 'josegonzalez/php'       # Repository for php-related formulae.
+## tap 'samueljohn/python'      # A few Python formulae that do not build well with pip alone.
+
+# Other interesting taps
+## tap 'larsimmisch/avr'        # GNU AVR toolchain (avr-gcc etc. for Arduino hackers).
+## tap 'nolith/embedded'        # Flashing tools for embedded devices and olsrd for mesh network routing.
+## tap 'anarchivist/forensics'  # Digital forensics-related formulae; mostly head-only, binary-only, or unstable.
+## tap 'titanous/gnuradio'      # GNU Radio and friends running on OS X.
+## tap 'besport/ocaml'          # A tap for Ocaml libraries, though with caveats, it requires you install its customized ocaml formula. Perhaps a template for more work.
+## tap 'petere/postgresql'      # Allows installing multiple PostgreSQL versions in parallel.
+## tap 'iMichka/MacVTKITKPythonBottles' # VTK and ITK binaries with Python wrapping.
+## tap 'rcmdnk/brewall'         # Manager for packages of Homebrew, inspired by Brewdler.
+
+
+
+# ###################################################################################################################################################
+# CASK PACKAGES
+# ###################################################################################################################################################
+
+# brew-cask provides a friendly homebrew-style CLI workflow for the administration of Mac applications distributed as binaries.
+tap 'phinze/cask'
+install 'brew-cask'
+
+
+
+# ###################################################################################################################################################
+# CASK SERVER PACKAGES
+# ###################################################################################################################################################
+
+## cask install 'onepassword' # upgrade needed, buy new license
+cask install 'airfoil'
+cask install 'appfresh'
+cask install 'bartender'
+## cask install 'bitcasa' # the cask needs to be fixed because there is still demand for manual input
+cask install 'bitcoin-qt'
+cask install 'cleanmymac' # license to buy
+## cask install 'couchpotato' # this cask does NOT exist
+cask install 'comicbookloversync'
+cask install 'comicbooklover'
+cask install 'comictagger'
+cask install 'google-music-manager'
+cask install 'drobo-dashboard' # java has to be installed first
+cask install 'dropbox'
+cask install 'hazel' # cask could be updated - package is outdated
+cask install 'indigo'
+cask install 'iterm2' # cask could be updated - package is outdated
+cask install 'jewelrybox'
+cask install 'macpardeluxe'
+## cask install 'mylar' # no cask available
+cask install 'plex-media-server'
+cask install 'postgres-app' # error during installation the app must be placed into the /applications folder, no symbolic link is allowed
+cask install 'sabnzbd'
+cask install 'sickbeard'
+## cask install 'sickbeard-anime' # can not be installed becaused it is also called Sickbeard.app and overwrites the Sickbeard application
+## cask install 'subsmarine' # error, when installing. please check the cask.
+## cask install 'trakt.tv' # this cask does NOT exist
+
+
+
+# ###################################################################################################################################################
+# SERVER BINARIES
+# ###################################################################################################################################################
+
+# Version Control
+install 'git' # Mavericks does deliver a further old git version, compare `brew info git` with `git --version`
+## install git-flow # problems with installing git flow, please fix
+## install mercurial # problems with installing mercurial, please fix
+
+# Install other useful binaries
+install 'ack'
+install 'ctags'
+install 'htop'
+install 'hub'
+install 'multitail'
+install 'ngrep'
+install 'ssh-copy-id'
+install 'tmux'
+install 'tree'
+install 'wget'
+install 'youtube-dl'
+
+# Install more recent versions of some OS X tools
+## install 'vim' # --override-system-vi
+
+# Nerd stuff
+## install 'python3' # ponysay needs python3 # unfortunately there were some errors during installation, please fix
+## install 'ponysay' # needs python 3
+
+
+
+# ###################################################################################################################################################
+# CLEANUP
+# ###################################################################################################################################################
+
+# Remove outdated versions from the cellar
+cleanup
