@@ -9,7 +9,7 @@
 # TO DO
 ## TERMINAL/COMMAND LINE INSTALL
 ### run command 'xcode-select --install'
-## JAVA INSTALL
+## CHECK IF JAVA IS INSTALLED
 ### run command 'java --version'
 
 set -e
