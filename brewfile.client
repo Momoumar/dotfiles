@@ -83,6 +83,7 @@ cask install 'hazel' # cask could be updated - package is outdated
 cask install 'indigo'
 cask install 'iterm2' # cask could be updated - package is outdated
 cask install 'jewelrybox'
+cask install 'macvim'
 cask install 'mendeley'
 cask install 'minecraft'
 cask install 'miro-video-converter'
@@ -117,14 +118,14 @@ cask install 'vlc'
 # ###################################################################################################################################################
 
 # Version Control
-install 'git' # Mavericks does deliver a further old git version, compare `brew info git` with `git --version`
+install 'git' # Mavericks does deliver a further old git version, compare `brew info git` with `git --version`.
 ## install git-flow # problems with installing git flow, please fix
 ## install mercurial # problems with installing mercurial, please fix
 
 # Install other useful binaries
 install 'ack'
 install 'ctags'
-install 'htop'
+install 'htop' # fix permissions for htop `cd /usr/local/Cellar/htop-osx/<version>/bin` and `chmod 655 htop` and `sudo chown root htop`
 install 'hub'
 install 'multitail'
 install 'ngrep'
