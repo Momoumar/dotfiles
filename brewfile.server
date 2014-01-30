@@ -73,6 +73,7 @@ cask install 'indigo'
 cask install 'iterm2' # cask could be updated - package is outdated
 cask install 'jewelrybox'
 cask install 'macpardeluxe'
+cask install 'macvim'
 ## cask install 'mylar' # no cask available
 cask install 'plex-media-server'
 cask install 'postgres-app' # error during installation the app must be placed into the /applications folder, no symbolic link is allowed
@@ -96,7 +97,7 @@ install 'git' # Mavericks does deliver a further old git version, compare `brew 
 # Install other useful binaries
 install 'ack'
 install 'ctags'
-install 'htop'
+install 'htop' # fix permissions for htop `cd /usr/local/Cellar/htop-osx/<version>/bin` and `chmod 655 htop` and `sudo chown root htop`
 install 'hub'
 install 'multitail'
 install 'ngrep'
