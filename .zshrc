@@ -106,6 +106,7 @@ alias s="cd ~/Sites"
 alias projects='cd ~/Dropbox/Sites/git/repo/projects/'
 alias research='cd ~/Dropbox/Sites/git/repo/research/'
 alias websites='cd ~/Dropbox/Sites/git/repo/websites/'
+alias putio='cd ~/Dropbox/Apps/PutIO/'
 
 # Applications
 alias coda='open -a /Applications/Coda\ 2.app/'
