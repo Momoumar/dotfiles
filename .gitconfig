@@ -1,0 +1,37 @@
+[include]
+  path = gitconfig.private ; get user and Github credentials
+
+[core]
+  editor = /Applications/Coda 2.app
+
+
+[mergetool "Kaleidoscope"]
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustExitCode = true
+
+[mergetool]
+  prompt = false
+
+[merge]
+  tool = Kaleidoscope ; You should probably prefer to buy Kaleidoscope from the official website, the App Store version runs in a Sandbox and therefore is limited
+
+
+[difftool "Kaleidoscope"]
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
+[difftool]
+  prompt = false
+
+[diff]
+	tool = Kaleidoscope
+
+
+[push]
+  default = simple
+
+[gitflow "prefix"]
+  feature = feature-
+  release = release-
+  hotfix = hotfix-
+  support = support-
+  versiontag = v
