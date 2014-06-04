@@ -63,9 +63,7 @@ cask install 'bartender'
 cask install 'beamer'
 ## cask install 'bino3d' # this cask does NOT exist
 ## cask install 'bitcasa' # the cask needs to be fixed because there is still demand for manual input
-cask install 'bittorrent-sync'
 cask install 'calibre'
-## cask install 'changers' # this cask does NOT exist
 cask install 'cleanmymac'
 cask install 'cocktail'
 cask install 'comicbookloversync'
@@ -83,6 +81,7 @@ cask install 'hazel' # cask could be updated - package is outdated
 cask install 'indigo'
 cask install 'iterm2' # cask could be updated - package is outdated
 cask install 'jewelrybox'
+cask install 'little-snitch'
 cask install 'macvim'
 cask install 'mendeley'
 cask install 'minecraft'

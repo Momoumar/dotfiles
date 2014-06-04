@@ -72,6 +72,7 @@ cask install 'hazel' # cask could be updated - package is outdated
 cask install 'indigo'
 cask install 'iterm2' # cask could be updated - package is outdated
 cask install 'jewelrybox'
+cask install 'little-snitch'
 cask install 'macpardeluxe'
 cask install 'macvim'
 ## cask install 'mylar' # no cask available
