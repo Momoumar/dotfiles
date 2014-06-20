@@ -73,6 +73,7 @@ cask install 'comictagger'
 cask install 'dropbox'
 cask install 'eyetv' # cask could be updated - package is outdated
 cask install 'flip4mac'
+## cask install 'framer-js' # this cask does NOT exist
 cask install 'google-chrome'
 cask install 'google-hangouts'
 cask install 'google-music-manager'
