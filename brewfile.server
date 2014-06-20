@@ -76,6 +76,7 @@ cask install 'little-snitch'
 cask install 'macpardeluxe'
 cask install 'macvim'
 ## cask install 'mylar' # no cask available
+cask install 'parallels'
 cask install 'plex-media-server'
 cask install 'postgres-app' # error during installation the app must be placed into the /applications folder, no symbolic link is allowed
 cask install 'sabnzbd'

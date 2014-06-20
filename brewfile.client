@@ -76,7 +76,6 @@ cask install 'flip4mac'
 cask install 'google-chrome'
 cask install 'google-hangouts'
 cask install 'google-music-manager'
-## cask install 'hackpad' # this cask does NOT exist
 cask install 'hazel' # cask could be updated - package is outdated
 cask install 'indigo'
 cask install 'iterm2' # cask could be updated - package is outdated
@@ -87,9 +86,7 @@ cask install 'mendeley'
 cask install 'minecraft'
 cask install 'miro-video-converter'
 cask install 'mumble'
-## cask install 'omnigraffle' ## upgrade needed, buy new license
 cask install 'openemu'
-cask install 'parallels'
 cask install 'plex-home-theater'
 cask install 'processing' # adjust the Sketchbook path to `~/Dropbox/Apps/Processing`
 cask install 'querious'
@@ -98,6 +95,8 @@ cask install 'reflector'
 cask install 'satellite-eyes'
 cask install 'screenflow'
 cask install 'simple-comic'
+## cask install 'sketch-beta' # this cask does NOT exist
+cask install 'sketch-tool'
 cask install 'skype'
 cask install 'spotify'
 cask install 'superduper'
