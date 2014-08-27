@@ -101,6 +101,8 @@ cask install 'sketch-tool'
 cask install 'skype'
 cask install 'spotify'
 cask install 'superduper'
+cask install 'synology-assistant'
+cask install 'synology-cloud-station'
 cask install 'tilemill'
 ## cask install 'trakt.tv' # this cask does NOT exist
 ## cask install 'tunnelblick' # the cask seems to be buggy
