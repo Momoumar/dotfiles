@@ -125,14 +125,17 @@ install 'git' # Mavericks does deliver a further old git version, compare `brew 
 
 # Install other useful binaries
 install 'ack'
+install 'boot2docker'
 install 'ctags'
 install 'htop' # fix permissions for htop `cd /usr/local/Cellar/htop-osx/<version>/bin` and `chmod 655 htop` and `sudo chown root htop`
 install 'hub'
 install 'multitail'
 install 'ngrep'
+install 'packer'
 install 'ssh-copy-id'
 install 'tmux'
 install 'tree'
+install 'weechat'
 install 'wget'
 install 'youtube-dl'
 
