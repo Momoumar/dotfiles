@@ -40,7 +40,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(brew bundler gem git knife osx ruby rvm vagrant)
+plugins=(brew bundler gem git osx ruby rvm vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 # ###################################################################################################################################################
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH=$PATH:/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
@@ -80,6 +80,9 @@ alias whois="whois -h whois-servers.net"
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
 
+# Open network ports (for all users)
+alias listen="sudo lsof -i -P | grep -i "listen""
+
 # OS X has no `md5sum`, so use `md5` as a fallback
 command -v md5sum > /dev/null || alias md5sum="md5"
 
@@ -104,13 +107,15 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias s="cd ~/Sites"
 alias projects='cd ~/Dropbox/Sites/git/repo/projects/'
-alias research='cd ~/Dropbox/Sites/git/repo/research/'
+alias research.private='cd ~/Dropbox/Sites/git/repo/research.private/'
+alias research.public='cd ~/Dropbox/Sites/git/repo/research.public/'
 alias websites='cd ~/Dropbox/Sites/git/repo/websites/'
 alias putio='cd ~/Dropbox/Apps/PutIO/'
 
 # Applications
 alias coda='open -a /Applications/Coda\ 2.app/'
 alias markdown='open -a /Applications/Markdown\ Pro.app/'
+alias marked='open -a /Applications/Marked\ 2.app/'
 
 # Git shortcuts
 alias ga='git add'
@@ -134,7 +139,7 @@ alias mt='multitail -i /var/log/appfirewall.log -i /var/log/system.log'
 
 # Minecraft Server Vanilla
 # alias mtmc='multitail --config <some path>/multitail.conf -i ~/Dropbox/Apps/MinecraftServerVanilla/server/server.log'
-alias mtmc='multitail minecraft -i ~/Dropbox/Apps/MinecraftServerVanilla/server/server.log'
+##oalias mtmc='multitail minecraft -i ~/Dropbox/Apps/MinecraftServerVanilla/server/server.log'
 
 # Minecraft Craftbukkit
 # alias mtcb='multitail <multicolorscheme name> -i </path/to/log>'
@@ -144,7 +149,6 @@ alias mtmc='multitail minecraft -i ~/Dropbox/Apps/MinecraftServerVanilla/server/
 # Nerd stuff
 # Source: http://aur.archlinux.org/packages/lolbash/lolbash/lolbash.sh
 alias wtf='dmesg'
-alias onoz='cat /var/log/errors.log'
 alias rtfm='man'
 alias visible='echo'
 alias invisible='cat'
